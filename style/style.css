@@ -3,11 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Common  Design*/
 .container{
     max-width: 1500px;
     margin: 0 auto;
 }
 
+.hidden{
+    display: none;
+}
+
+
+/* Task One Section */
 .section-1-parent{
     padding: 20px 5%;
     height: 100vh;
@@ -27,7 +35,7 @@
 .task-1-section :first-child p{
     background: #E3E3E3;
     height: 90%;
-    width: 90%;
+    width: 95%;
     border-radius: 10px;
     font-weight: 700;
     font-size: 2em;
@@ -41,12 +49,66 @@
 }
 .task-1-section :last-child p{
     background: #FFFFEB;
-    width: 90%;
+    width: 95%;
     height: 90%;
     border-radius: 10px;
     font-weight: 700;
     font-size: 2em;
 }
+
+
+/* Task two section */
+
+.section-2-parent{
+    height: 90vh;
+    margin: 5vh 5vw;
+}
+.task-2-section{
+    height: 100%;
+    /* border: 1px solid green; */
+    padding: 2%;
+    display: grid;
+    grid-template-columns: 2fr repeat(2,1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    
+}
+.task-2-section>div:nth-child(1){
+    border-radius: 10px;
+    color: white;
+    font-size: 2rem;
+    padding: 2vh 2vw;
+    font-weight: 700;
+    background: rgb(241, 18, 56);
+    grid-row: span 2;
+}
+.task-2-section>div:nth-child(2){
+    border-radius: 10px;
+    color: white;
+    font-size: 2rem;
+    padding: 2vh 2vw;
+    font-weight: 700;
+    background: rgb(252, 183, 34);
+    grid-column: span 2;
+}
+.task-2-section>div:nth-child(3){
+    border-radius: 10px;
+    color: white;
+    font-size: 2rem;
+    padding: 2vh 2vw;
+    font-weight: 700;
+    background: rgb(152, 18, 241);
+}
+.task-2-section>div:nth-child(4){
+    border-radius: 10px;
+    color: white;
+    font-size: 2rem;
+    padding: 2vh 2vw;
+    font-weight: 700;
+    background: #c0c0c0;
+}
+
+
 
 
 
@@ -55,4 +117,14 @@
         grid-template-columns: 1fr;
         grid-template-rows: 30% auto;
 }
+    .task-2-section{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .task-2-section>div:nth-child(n){
+        grid-column: auto;
+        grid-row: auto;
+    }
 }
+
