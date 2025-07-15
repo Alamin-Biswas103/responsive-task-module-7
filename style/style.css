@@ -61,7 +61,7 @@
 
 .section-2-parent{
     height: 90vh;
-    margin: 5vh 5vw;
+    margin: 5vh 3vw;
 }
 .task-2-section{
     height: 100%;
@@ -108,7 +108,16 @@
     background: #c0c0c0;
 }
 
+/* Section 3 is designed here */
 
+.section-3-parent{
+    margin: 5vh 5vw;
+}
+.task-3-section img{
+    width: 100%;
+    height: 99vh;
+    border-radius: 10px;
+}
 
 
 
@@ -125,6 +134,12 @@
     .task-2-section>div:nth-child(n){
         grid-column: auto;
         grid-row: auto;
+    }
+
+    .task-3-section img{
+        /* object-fit: scale-down; */
+        width: 100%;
+        height: 70vh;
     }
 }
 
