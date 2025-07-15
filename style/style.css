@@ -120,6 +120,41 @@
 }
 
 
+/* Section 4 is designed here */
+.section-4-parent{
+    margin: 50px 3vw;
+}
+.food-div{
+    display: grid;
+    grid-template-columns: 35% auto;
+    align-items: center;
+    gap: 2vw;
+    margin-bottom: 20px;
+
+}
+.food-div img{
+    height: 50vh;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.food-div h1{
+    font-size: 2em;
+}
+
+.food-div p{
+    color: #5a5858;
+    margin: 20px 0;
+}
+.blue-btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background: linear-gradient(180deg, #0000ff,rgb(86, 226, 191));
+}
 
 @media screen and (max-width:576px){
     .task-1-section{
@@ -140,6 +175,10 @@
         /* object-fit: scale-down; */
         width: 100%;
         height: 70vh;
+    }
+
+    .food-div{
+        grid-template-columns: 1fr;
     }
 }
 
